@@ -1,0 +1,14 @@
+
+<div class = 'row container' > 
+  
+<div *ngFor = "let text of textString  ; let i = index"  class = ' mt-3 ml-3 mb-3'
+[ngClass]="{' badge-danger' : (text>=0) ,' badge-primary' : !(text>=0) }">
+
+  
+<span class = ' col-md-2 '>{{text}} <span (click) = "delete(i)" style = 'font-weight: bold ; cursor : pointer'> x</span></span>
+
+</div>
+
+
+</div>
+
